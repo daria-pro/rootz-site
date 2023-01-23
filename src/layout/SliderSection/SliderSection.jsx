@@ -28,11 +28,7 @@ export const SliderSection = () => {
     variableWidth: true,
     swipeToSlide: true,
     initialSlide: 2,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 4000,
-    cssEase: "linear",
-    pauseOnHover: true,
+    speed: 500,
   };
 
   function handleNext() {
