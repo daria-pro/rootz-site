@@ -1,0 +1,151 @@
+@import "../../assets/scss/main.scss";
+
+.team {
+  text-align: center;
+  padding: 192px 0;
+
+  @include onSmallDesktop {
+    padding: 192px 20px 110px;
+  }
+
+  @include onMobile {
+    padding: 100px 18px 110px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #1E1A20;
+    max-width: 352px;
+    margin: 16px auto 13px;
+
+    @include onSmallDesktop {
+      margin: 16px auto 40px;
+    }
+
+    @include onMobile {
+      margin: 8px auto 40px;
+      font-size: 15px;
+      line-height: 175%;
+      max-width: 288px;
+    }
+  }
+
+  &__members {
+    position: relative;
+    height: 367px;
+    width: 100%;
+
+    @include onSmallDesktop {
+      height: 606px;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    @include onMobile {
+      height: 606px;
+      max-width: 425px;
+    }
+  }
+
+  &__member-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include onSmallDesktop {
+      max-width: 280px;
+    }
+
+    @include onMobile {
+      max-width: 200px;
+    }
+  }
+
+  &__member-2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @include onSmallDesktop {
+      right: 0;
+      left: initial;
+      top: 50%;
+      transform: translate(0, -50%);
+      max-width: 280px;
+    }
+
+    @include onMobile {
+      max-width: 212px;
+      top: 210px;
+      right: 0;
+      left: initial;
+      transform: translate(0, 0);
+      bottom: initial;
+    }
+  }
+
+  &__member-3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include onSmallDesktop {
+      top: initial;
+      right: initial;
+      bottom: 0;
+      left: 0;
+      max-width: 230px;
+    }
+
+    @include onMobile {
+      top: initial;
+      bottom: 0;
+      left: 0;
+      max-width: 171px;
+    }
+  }
+
+  &__divider-1,
+  &__divider-2 {
+    z-index: -1;
+    position: absolute;
+  }
+
+  &__divider-1 {
+    top: 0;
+    left: 157px;
+
+    @include onSmallDesktop {
+      top: 57px;
+      left: 138px;
+      transform: rotate(20deg);
+    }
+
+    @include onMobile {
+      width: 234px;
+      transform: rotate(45deg);
+      top: 87px;
+      left: 99px;
+    }
+  }
+
+  &__divider-2 {
+    bottom: 46px;
+    right: 138px;
+
+    @include onSmallDesktop {
+      bottom: 83px;
+      right: 87px;
+    }
+
+    @include onMobile {
+      max-width: 234px;
+      transform: scaleX(-1) rotate(-100deg);
+      bottom: 173px;
+      right: 97px;
+    }
+  }
+}

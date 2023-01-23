@@ -1,0 +1,19 @@
+@import '../../assets/scss/main.scss';
+
+.input {
+  background: #fff;
+  border-radius: 40px;
+  border: 2px solid transparent;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 100%;
+  width: 100%;
+  outline: none;
+
+
+  &::placeholder {
+    color: #807C7C;
+  }
+}

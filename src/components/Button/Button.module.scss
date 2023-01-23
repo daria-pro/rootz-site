@@ -1,0 +1,36 @@
+@import '../../assets/scss/main.scss';
+
+.button {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--white {
+    border-radius: 40px;
+    background: #fff;
+    box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+    padding: 13px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000;
+  }
+
+  &--red {
+    background: $colorRed;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 1px;
+  }
+}

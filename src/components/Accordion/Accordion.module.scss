@@ -1,0 +1,11 @@
+@import "../../assets/scss/main.scss";
+
+.accordion {
+  max-width: 536px;
+  width: 100%;
+  margin: -35px 0 0 20px;
+
+  @include onTablet {
+    margin: 21px 0 0;
+  }
+}

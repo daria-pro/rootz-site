@@ -1,0 +1,84 @@
+@import '../../assets/scss/main.scss';
+
+.footer {
+  background: #F7F3F4;
+  color: #333;
+  padding: 0 40px 99px;
+
+  @include onMobile {
+    padding: 0 37px 42px 30px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1097px;
+    margin: 0 auto;
+
+    @include onMobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    margin: 96px 0 32px;
+
+    @include onMobile {
+      font-size: 28px;
+      margin: 43px 0 1px;
+    }
+  }
+
+  &__subtitle {
+    margin: 107px 0 37px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+
+    @include onMobile {
+      margin: 33px 0 15px;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+
+    @include onMobile {
+      font-size: 12px;
+    }
+  }
+
+  &__paragraph:first-of-type {
+    max-width: 158px;
+
+    @include onMobile {
+      max-width: 100%;
+    }
+  }
+
+  &__social-icons a:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__contacts {
+    @include onMobile {
+      width: 100%;
+    }
+  }
+
+  &__headquarters {
+    @include onMobile {
+      max-width: 143px;
+    }
+  }
+}

@@ -1,0 +1,185 @@
+@import '../../assets/scss/main.scss';
+
+.header {
+  background: linear-gradient(0deg, #F7F3F4, #F7F3F4), linear-gradient(0deg, #FEBD2F, #FEBD2F), radial-gradient(178.57% 327.71% at 110.1% 3.35%, #FF605B 0%, #FFEE30 100%), #27D07D;
+  padding: 0 0 96px;
+  max-height: 982px;
+
+  @include onMobile {
+    margin-bottom: 163px;
+  }
+
+  &__main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 69px 33px 0 77px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @include onTablet {
+      flex-direction: column;
+      padding: 30px 80px 77px;
+      overflow-x: hidden;
+    }
+
+    @include onMobile {
+      padding: 70px 20px 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 59px;
+    max-width: 543px;
+
+    @include onTablet {
+      max-width: 450px;
+      margin-bottom: 30px;
+    }
+
+    @include onMobile {
+      max-width: 100%;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000;
+    max-width: 448px;
+    margin-bottom: 48px;
+
+    @include onMobile {
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__right-side {
+    position: relative;
+    width: 514px;
+    height: 607px;
+
+    @include onTablet {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @include onMobile {
+      height: 565px;
+      max-width: 335px;
+    }
+
+  }
+
+  &__parrot {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include onTablet {
+      max-width: 371px;
+      top: -25px;
+      right: -43px;
+    }
+
+    @include onMobile {
+      height: 565px;
+      max-width: 458px;
+      top: -37px;
+      right: -201px;
+    }
+  }
+
+  &__members {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include onTablet {
+      bottom: 203px;
+      max-width: 216px;
+      left: 68px;
+    }
+
+    @include onMobile {
+      height: 254px;
+      bottom: 136px;
+      left: -3px;
+    }
+  }
+
+  &__members-number {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+    color: #FFF;
+
+    @include onTablet {
+      bottom: 214px;
+      left: 88px;
+    }
+
+    @include onMobile {
+      bottom: 149px;
+      left: 21px;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    max-width: 448px;
+    width: 100%;
+
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__input {
+    background: #fff;
+    box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+    border-radius: 40px;
+    border: none;
+    padding: 20px 20px 20px 48px;
+    max-width: 448px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+
+    &::placeholder {
+      font-weight: 400;
+      color: #807C7C;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input-icon {
+    position: absolute;
+    left: 21px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &__form-button {
+    display: inline-block;
+    position: absolute;
+    max-width: 122px;
+    width: 100%;
+    right: 8px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    @include onMobile {
+      max-width: 100px;
+    }
+  }
+}

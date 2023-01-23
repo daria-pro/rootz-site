@@ -1,0 +1,118 @@
+@import '../../assets/scss/main.scss';
+
+.nav {
+  padding: 32px 80px 0;
+
+  @include onTablet {
+    padding: 43px 40px 0;
+  }
+
+  @include onMobile {
+    padding: 43px 18px 0;
+  }
+
+  &__content {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    height: fit-content;
+    border-bottom: 4px solid #222433;
+    padding-bottom: 32px;
+    margin: 0 auto;
+    z-index: 99;
+
+    @include onTablet {
+      justify-content: end;
+      width: 100%;
+      padding-bottom: 21px;
+    }
+  }
+
+  &__logo-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 111px;
+    height: 37px;
+    margin-right: 35px;
+    z-index: 99;
+  }
+
+  &__logo-leaves {
+    width: 16px;
+    height: 31px;
+    position: relative;
+  }
+
+  &__leaf1,
+  &__leaf2,
+  &__leaf3 {
+    position: absolute;
+
+  }
+
+  &__leaf1 {
+    left: 0;
+    bottom: 0;
+  }
+
+  &__leaf2 {
+    left: 6px;
+    bottom: 0;
+  }
+
+  &__leaf3 {
+    left: 8px;
+    bottom: -2px;
+  }
+
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 548px;
+    width: 100%;
+    margin-right: 20px;
+
+    @include onTablet {
+      display: none;
+    }
+
+    & li:not(:first-child) {
+      @include onMobile {
+        margin-top: 56px;
+      }
+    }
+
+    & li:first-child {
+      position: relative;
+    }
+  }
+
+  &__link {
+    color: #000;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__button {
+    box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+    max-width: 145px;
+    width: 100%;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+}

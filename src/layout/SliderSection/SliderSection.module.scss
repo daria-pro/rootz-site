@@ -1,0 +1,90 @@
+@import '../../assets/scss/main.scss';
+
+.slider {
+  padding: 104px 0 191px;
+  background-color: $colorOrange;
+  overflow-x: hidden;
+  position: relative;
+
+  @include onMobile {
+    padding: 55px 0 143px;
+  }
+
+  &__paging {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @include onMobile {
+      bottom: 69px;
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__secondImage {
+    position: absolute;
+    width: 138px;
+    height: 121px;
+    top: -21px;
+    left: 47px;
+
+    @include onTablet {
+      width: 93px;
+      height: 87px;
+    }
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__item-main .slider__title {
+    color: #1E1A20;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 175%;
+    text-align: center;
+    color: #1E1A20;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    width: 281px;
+
+    @include onMobile {
+      font-size: 11px;
+      line-height: 171%;
+      width: 186px;
+      bottom: 14%;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+
+    @include onMobile {
+      top: 38%;
+      font-size: 14px;
+    }
+  }
+
+
+}
